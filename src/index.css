@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  min-height: 100vh;
+  background-color: #0f0f0f;
+  color: #f1f1f1;
+  font-family: 'Inter', sans-serif;
+}
+
+.clay {
+  background: #1a1a2e;
+  border-radius: 1rem;
+  box-shadow: 4px 4px 10px #0d0d1a, -4px -4px 10px #27274a;
+}
+
+.clay-sm {
+  background: #1a1a2e;
+  border-radius: 0.75rem;
+  box-shadow: 2px 2px 6px #0d0d1a, -2px -2px 6px #27274a;
+}
+
+.clay-inset {
+  background: #13131f;
+  border-radius: 0.5rem;
+  box-shadow: inset 2px 2px 5px #0a0a14, inset -2px -2px 5px #202038;
+}
+
+.clay-button {
+  background: linear-gradient(135deg, #7c3aed, #4f46e5);
+  color: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 15px #4f46e580, 0 1px 3px #00000060;
+  transition: all 0.25s ease;
+  border: 1px solid #7c3aed88;
+  cursor: pointer;
+}
+
+.clay-button:hover {
+  background: linear-gradient(135deg, #8b5cf6, #6366f1);
+  box-shadow: 0 6px 20px #7c3aed90, 0 2px 6px #00000060;
+  transform: translateY(-2px);
+}
+
+.clay-button:active {
+  transform: translateY(0px);
+  box-shadow: 0 2px 8px #4f46e560;
+}
