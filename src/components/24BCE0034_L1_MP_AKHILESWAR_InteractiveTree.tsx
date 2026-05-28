@@ -159,7 +159,7 @@ export default function InteractiveTree_24BCE0034_Akhileswar({ entries, onBack }
           nodes.push({
             id: `fac-${si}-${entry.id}-${path}-${col}`,
             x: COL(col + 1), y: fy,
-            label: entry.faculty, sublabel: entry.slots.join(', '),
+            label: entry.faculty, sublabel: entry.slots.join(' + '),
             type: 'faculty', status, reason: disabled ? reason : '',
             subjectIndex: si, entryId: entry.id,
             selectionKey: selKey(si, path),
@@ -256,7 +256,7 @@ export default function InteractiveTree_24BCE0034_Akhileswar({ entries, onBack }
         nodes.push({
           id: `s-fac-${si}-${fi}`,
           x: COL(2), y: fy,
-          label: entry.faculty, sublabel: entry.slots.join(', '),
+          label: entry.faculty, sublabel: entry.slots.join(' + '),
           type: 'faculty', status, reason: disabled ? reason : '',
           subjectIndex: si, entryId: entry.id,
           selectionKey: selKey(si, ''),

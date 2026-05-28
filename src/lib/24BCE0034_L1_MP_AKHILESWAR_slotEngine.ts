@@ -54,7 +54,7 @@ export function parseSlot_24BCE0034_Akhileswar(raw: string): ParsedSlot {
 
 export function parseSlots(slotString: string): string[] {
   return slotString
-    .split(',')
+    .split(/[,\s+]+/)
     .map((s) => s.trim().toUpperCase())
     .filter(Boolean);
 }

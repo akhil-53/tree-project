@@ -95,7 +95,7 @@ export default function DataEntryForm_24BCE0034_Akhileswar({
             />
           </div>
           <div>
-            <label style={labelStyle}>Slots (comma-separated)</label>
+            <label style={labelStyle}>Slots (comma / space / plus separated)</label>
             <input
               placeholder="e.g. A1, TA1, L35, L36"
               value={slotsRaw}
@@ -226,7 +226,7 @@ export default function DataEntryForm_24BCE0034_Akhileswar({
                           {entry.faculty}
                         </span>
                         <span style={{ fontSize: 11, color: '#9ca3af', marginLeft: 8 }}>
-                          [{entry.slots.join(', ')}]
+                          [{entry.slots.join(' + ')}]
                         </span>
                       </div>
                       <button
